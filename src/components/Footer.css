@@ -1,0 +1,12 @@
+.footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  min-height: 100px;
+}
+
+.footer__logo img {
+  width: 192px;
+  height: 82px;
+}

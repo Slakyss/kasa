@@ -1,0 +1,18 @@
+.AppartGrid {
+  background-color: rgb(236, 236, 236);
+  min-height: 50vh;
+  border-radius: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  padding: 15px;
+  justify-content: space-evenly;
+}
+
+@media screen and (width <= 768px) {
+  .AppartGrid {
+    justify-content: center;
+    background-color: white;
+    padding: 0;
+  }
+}
