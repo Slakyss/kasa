@@ -21,3 +21,9 @@
 .navbar > *:first-child {
   margin-right: auto;
 }
+
+@media screen and (width <= 768px) {
+  .navbar a {
+    text-transform: uppercase;
+  }
+}
