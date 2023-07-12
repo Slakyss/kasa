@@ -8,11 +8,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 3%;
 }
 
 .description__header .fa-solid.fa-chevron-up {
   font-size: 32px;
   cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.description__header .fa-solid.fa-chevron-up.rotate {
+  transform: rotate(180deg);
 }
 
 .description__content {
@@ -20,17 +26,21 @@
   padding: 25px 10px 10px 10px;
   border-radius: 10px;
   margin: 0;
-  position: relative;
   top: -10px;
-  z-index: -1;
-  animation: slide-in 0.5s ease-in-out;
+  overflow: hidden;
+  animation: slide-in 0.1s ease-in-out;
 }
 
 @keyframes slide-in {
   0% {
     transform: translateY(-100%);
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
   }
   100% {
     transform: translateY(0);
+    opacity: 1;
   }
 }

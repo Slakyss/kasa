@@ -6,6 +6,8 @@
   display: flex;
   overflow: hidden;
   width: 100%;
+  margin-bottom: 3%;
+  border-radius: 20px;
 }
 
 .slide {
@@ -13,6 +15,14 @@
   height: 400px;
   display: flex;
   align-items: center;
+}
+
+.slide__indicator {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
 }
 
 .slide img {

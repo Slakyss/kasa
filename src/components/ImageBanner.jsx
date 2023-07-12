@@ -25,6 +25,9 @@ function ImageBanner(props) {
             style={{ transform: `translateX(-${currentIndex * 100}%)` }}
           >
             <img src={pic} alt="" />
+            <div className="slide__indicator">
+              {currentIndex + 1}/{pictures.length}
+            </div>
           </div>
         ))}
       </div>

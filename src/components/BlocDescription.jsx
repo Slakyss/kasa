@@ -2,17 +2,17 @@ import React, { useState } from "react"
 import "./BlocDescription.css"
 
 function BlocDescription(props) {
-    const [isContentVisible, setIsContenteVisible] = useState(false)
+    const [isContentVisible, setIsContentVisible] = useState(true)
 
     const showContent = () => {
-        setIsContenteVisible(!isContentVisible)
+        setIsContentVisible(!isContentVisible)
     }
 
     return (
         <div className='appartement__description'>
-            <p className='description__header'>
+            <p className={`description__header ${isContentVisible ? 'active' : ''}`} onClick={showContent}>
                 <span>{props.title}</span>
-                <i className="fa-solid fa-chevron-up" onClick={showContent}></i>
+                <i className={`fa-solid fa-chevron-up ${isContentVisible ? 'rotate' : ''}`}></i>
             </p>
 
             {isContentVisible && <p className='description__content'>{props.content}</p>}
