@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useAppartementNavigate } from '../routes/router.jsx';
+import fetchAppartementData from '../api/FetchAppData.jsx'; 
 import "./AppartGrid.css";
 import AppartementCard from "./AppartementCard.jsx";
 
@@ -7,14 +8,18 @@ function AppartGrid() {
   const navigateToAppartement = useAppartementNavigate();
   const [appartement, setAppartement] = useState([]);
 
-  useEffect(fetchAppartement, []);
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const data = await fetchAppartementData();
+        setAppartement(data);
+      } catch (error) {
+        console.error(error);
+      }
+    }
 
-  function fetchAppartement() {
-    fetch("logements.json")
-      .then((res) => res.json())
-      .then((res) => setAppartement(res))
-      .catch(console.error);
-  }
+    fetchData();
+  }, []);
 
   function handleAppartementClick(id) {
     navigateToAppartement(id);
