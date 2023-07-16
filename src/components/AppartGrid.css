@@ -14,10 +14,10 @@
   max-width: 20rem;
 }
 
-@media screen and (width <= 768px) {
+@media screen and (max-width: 768px) {
   .AppartGrid {
-    justify-content: center;
     background-color: white;
     padding: 0;
+    flex-direction: column;
   }
 }

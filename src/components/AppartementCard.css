@@ -27,7 +27,7 @@
 }
 
 @media screen and (width <= 768px) {
-  .appartement__card {
+  .appartement__card img {
     flex-basis: 100%;
   }
 }
