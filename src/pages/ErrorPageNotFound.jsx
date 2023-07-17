@@ -9,7 +9,7 @@ function ErrorPageNotFound() {
     <>
         <Navbar />
         <Main>
-        <NotFoundPage/>
+            <NotFoundPage/>
         </Main>
     </>
   )

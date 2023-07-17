@@ -2,8 +2,7 @@ import React from 'react'
 import "./AppartementHeader.css"
 
 function AppartementHeader(props) {
-    console.log("porps de l appart:", props)
-
+    
 const name = props.appartementData.host.name    
 const [firstName, lastName] = name.split (" ");
 

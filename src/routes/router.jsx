@@ -37,12 +37,12 @@ const AppartementRouter = createBrowserRouter([
         path: "/about",
         element: <About />,
       },
-      {
-        Path: "/error",
-        element: <ErrorPageNotFound/>
-      }  
     ],
   },
+  {
+    path: "/error",
+    element: <ErrorPageNotFound/>
+  }  
 ]);
 
 
