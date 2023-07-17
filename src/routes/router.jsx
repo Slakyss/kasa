@@ -1,5 +1,5 @@
 import React from "react";
-import { createBrowserRouter, Outlet, useNavigate } from "react-router-dom";
+import { createBrowserRouter, Outlet } from "react-router-dom";
 import Main from "../layout/Main";
 import Footer from "../layout/Footer";
 import HomePage from "../pages/HomePage";
@@ -37,18 +37,14 @@ const AppartementRouter = createBrowserRouter([
         path: "/about",
         element: <About />,
       },
+      {
+        Path: "/error",
+        element: <ErrorPageNotFound/>
+      }  
     ],
   },
 ]);
 
-export const useAppartementNavigate = () => {
-  const navigate = useNavigate();
 
-  function navigateToAppartement(id) {
-    navigate(`/appartement/${id}`);
-  }
-
-  return navigateToAppartement;
-};
 
 export const router = AppartementRouter;

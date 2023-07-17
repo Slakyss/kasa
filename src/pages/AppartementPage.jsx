@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Navigate } from 'react-router-dom';
 import BlocDescription from '../components/BlocDescription';
 import ImageBanner from '../components/ImageBanner';
 import AppartementHeader from '../components/AppartementHeader';
@@ -24,6 +24,8 @@ function AppartementPage() {
   }, [id]);
 
   if (appartementData === null) return <div>...Chargement</div>;
+
+  if (appartementData == undefined) return <Navigate to="/error" replace />;
 
   return (
     <div className="appartement__page">

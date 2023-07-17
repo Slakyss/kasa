@@ -6,12 +6,12 @@ import Main from "../layout/Main";
 
 function HomePage() {
   return (
-    <div>
+    <>
       <Main>
         <Banner />
         <AppartGrid />
       </Main>
-    </div>
+    </>
   );
 }
 
