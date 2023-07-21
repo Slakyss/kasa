@@ -1,12 +1,12 @@
 import React from 'react'
 import BlocDescription from '../components/BlocDescription'
-import AboutBanner from '..//components/AboutBanner'
-import './About.css'
+import AboutBannerImg from '../images/BannerAbout.png'
+import Banner from "../layout/Banner"
 
 function About() {
   return (
     <>
-        <AboutBanner />
+        <Banner image={AboutBannerImg} showOverlay={false}/>
         <div className='about__bloc__description'>
             <BlocDescription title="Fiabilité" content= "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."/>
             <BlocDescription title="Respect" content= "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."/>

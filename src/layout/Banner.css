@@ -1,4 +1,4 @@
-.banner {
+/* .banner {
   height: 200px;
   max-width: auto;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -12,4 +12,58 @@
   color: white;
   font-size: 25px;
   margin-bottom: 5%;
+} */
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  max-width: 1248px;
+  height: 250px;
+  border-radius: 25px;
+  font-size: 25px;
+  margin-bottom: 5%;
+}
+
+.banner .bannerImg {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.banner .overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.263);
+  z-index: 2;
+}
+
+.banner h3 {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  font-size: 48px;
+  z-index: 3;
+  font-weight: 500;
+}
+
+/* Media Query for Mobile */
+@media screen and (max-width: 748px) {
+  .banner.homeBanner {
+    height: 111px;
+    border-radius: 10px;
+  }
+
+  .banner.homeBanner h3 {
+    text-align: left;
+    font-size: 24px;
+    left: 30%;
+    width: 50%;
+  }
 }
