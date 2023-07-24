@@ -1,13 +1,17 @@
 .navbar {
   display: flex;
   align-items: center;
-  gap: 3%;
   padding: 5%;
+}
+
+.navbar__link :nth-child(2) {
+  margin-left: 20px;
 }
 
 .navbar a {
   text-decoration: none;
   color: #ff6060;
+  font-size: 24px;
 }
 
 .navbar a.active {
@@ -22,8 +26,18 @@
   margin-right: auto;
 }
 
-@media screen and (width <= 768px) {
+@media screen and (width <= 1074px) {
   .navbar a {
     text-transform: uppercase;
+    font-size: 12px;
+  }
+
+  .navbar__logo img {
+    width: 50%;
+  }
+
+  .navbar__link {
+    width: 180px;
+    text-align: end;
   }
 }

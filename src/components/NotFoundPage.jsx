@@ -6,7 +6,7 @@ function NotFoundPage() {
   return (
     <div className='error__page'>
       <h1>404</h1>
-      <h2>Oops ! La page que vous demandez n'existe pas</h2>
+      <h2>Oups ! La page que vous demandez n'existe pas</h2>
       <Link to="/">Retournez sur la page d'accueil</Link>
     </div>
   );

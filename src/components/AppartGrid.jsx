@@ -3,7 +3,6 @@ import fetchAppartementData from '../api/FetchAppData.jsx';
 import "./AppartGrid.css";
 import AppartementCard from "./AppartementCard.jsx";
 
-
 function AppartGrid() {
   const [appartement, setAppartement] = useState([]);
 
@@ -23,13 +22,13 @@ function AppartGrid() {
   return (
     <div className='AppartGrid'>
       {appartement.map((appartement) => (
-        <AppartementCard 
-          key={appartement.id}
-          title={appartement.title} 
-          imageUrl={appartement.cover}
-          id={appartement.id}
-          
-        />
+        <div key={appartement.id} className="appartement__card">
+          <AppartementCard 
+            title={appartement.title} 
+            imageUrl={appartement.cover}
+            id={appartement.id}
+          />
+        </div>
       ))}
     </div>
   );

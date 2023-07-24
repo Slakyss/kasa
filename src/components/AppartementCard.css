@@ -1,33 +1,29 @@
 .appartement__card {
-  border-radius: 30px;
-  flex-basis: 30%;
   display: grid;
-  align-items: flex-end;
-  min-width: 200px;
-  min-height: 200px;
-  background-size: cover;
-  position: relative;
+  grid-template-rows: 1fr auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .appartement__card img {
-  width: 100%;
-  height: 100%;
   object-fit: cover;
-  border-radius: 30px;
-  box-shadow: rgb(149, 157, 165 / 20%) 0px 8px 24px;
-  filter: brightness(0.8);
+  width: 100%;
 }
 
 .appartement__subtitle {
-  width: auto;
-  margin-inline-start: 5%;
-  margin-block-end: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   color: white;
-  position: absolute;
+  background: linear-gradient(to top, #8a3737, #ff6060);
+  height: 70px;
+  padding-left: 5%;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 0 0 20px 20px;
 }
 
-@media screen and (width <= 768px) {
-  .appartement__card img {
-    flex-basis: 100%;
-  }
+.link__style {
+  text-decoration: none;
 }

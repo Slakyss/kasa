@@ -4,7 +4,7 @@ import Main from "../layout/Main";
 import Footer from "../layout/Footer";
 import HomePage from "../pages/HomePage";
 import AppartementPage from "../pages/AppartementPage";
-import Navbar from "../components/Navbar";
+import Navbar from "../layout/Navbar";
 import About from "../pages/About";
 import ErrorPageNotFound from "../pages/ErrorPageNotFound";
 

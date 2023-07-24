@@ -4,21 +4,36 @@
 }
 
 .error__page h1 {
-  font-size: 288px;
+  font-size: clamp(15vw, 40px, 15vw);
   font-weight: 700;
-  margin: 0;
+  margin-bottom: 3%;
+  margin-top: 0;
 }
 
 .error__page h2 {
-  font-size: 36px;
+  font-size: clamp(2vw, 18px, 6vw);
+  margin-bottom: 12px;
+  font-weight: 500;
+  margin-bottom: 10%;
 }
 
 .error__page a {
   color: #ff6060;
-  font-size: 18px;
+  font-size: max(1.2vw, 14px);
   text-decoration: none;
+  text-decoration: underline;
 }
 
 .error__page a:hover {
   text-decoration: underline;
+}
+
+@media screen and (width <= 1074px) {
+  .error__page h1 {
+    margin-top: 10%;
+  }
+
+  .error__page h2 {
+    margin-bottom: 20%;
+  }
 }

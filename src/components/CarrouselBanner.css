@@ -30,7 +30,7 @@
 
 .slide {
   flex: 0 0 100%;
-  height: 400px;
+  height: 415px;
   display: flex;
   align-items: center;
 }
@@ -41,6 +41,7 @@
   left: 50%;
   transform: translateX(-50%);
   color: white;
+  font-size: 18px;
 }
 
 .slide img {
@@ -64,7 +65,7 @@
 .carrousel__next {
   color: white;
   cursor: pointer;
-  font-size: 46px;
+  font-size: 79px;
 }
 
 .carrousel__prev {

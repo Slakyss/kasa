@@ -1,69 +1,61 @@
-/* .banner {
-  height: 200px;
-  max-width: auto;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/bannerHome.png");
-  background-size: cover;
-  background-position: center;
-  box-sizing: border-box;
-  border-radius: 30px;
-  display: grid;
-  place-items: center;
-  color: white;
-  font-size: 25px;
-  margin-bottom: 5%;
-} */
-
-.banner {
+.banner__all {
   display: flex;
   justify-content: center;
-  align-items: center;
-  position: relative;
-  overflow: hidden;
-  color: #fff;
-  max-width: 1248px;
-  height: 250px;
+  margin-top: 30px;
+  height: 223px;
   border-radius: 25px;
-  font-size: 25px;
-  margin-bottom: 5%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
-.banner .bannerImg {
-  position: absolute;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+.banner__all h1 {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 48px;
+  font-weight: 500;
   z-index: 1;
 }
 
-.banner .overlay {
+.banner__home {
+  position: relative;
+  background-image: url("../images/BannerHome.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 25px;
+  margin-bottom: 5%;
+}
+
+.banner__home::before {
+  content: "";
   position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.263);
-  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.234);
+  border-radius: 25px;
 }
 
-.banner h3 {
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  font-size: 48px;
-  z-index: 3;
-  font-weight: 500;
+.banner__about {
+  background: url("../images/BannerAbout.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 25px;
 }
 
-/* Media Query for Mobile */
-@media screen and (max-width: 748px) {
-  .banner.homeBanner {
-    height: 111px;
-    border-radius: 10px;
+@media (max-width: 1075px) {
+  .banner__all h1 {
+    font-size: 36px;
   }
-
-  .banner.homeBanner h3 {
-    text-align: left;
-    font-size: 24px;
-    left: 30%;
-    width: 50%;
+  .banner_home,
+  .banner__about {
+    margin-top: 0px;
+    height: 111px;
+    background-position: left;
+  }
+  .banner__about,
+  .banner_home,
+  .banner__all {
+    border-radius: 25px;
   }
 }

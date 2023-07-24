@@ -1,6 +1,7 @@
 .appartement__header {
   display: flex;
   margin-bottom: 20px;
+  color: #ff6060;
 }
 
 .appartement__title {
@@ -65,18 +66,27 @@
 }
 
 .appartement__tags {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 132px));
+  display: flex;
   gap: 1rem;
+  align-items: center;
 }
 
 .appartement__tags span {
   background-color: #ff6060;
   color: #ffffff;
-  padding: 5px 40px;
   border-radius: 10px;
   font-size: 14px;
   text-align: center;
+  padding: 10px 30px;
+  width: 84px;
+  height: 18px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.appartement__tags span:hover {
+  text-overflow: clip;
 }
 
 .appartement__description__bloc {

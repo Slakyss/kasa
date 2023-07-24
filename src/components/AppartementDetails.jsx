@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import BlocDescription from '../components/BlocDescription';
 import ImageBanner from './CarrouselBanner';
-import AppartementHeader from '../components/AppartementHeader';
+import AppartementDetailsHeader from '../components/AppartementDetailsHeader';
 import { Navigate } from 'react-router-dom';
 import fetchAppartementData from '../api/FetchAppData';
 
@@ -28,7 +28,7 @@ function AppartementDetails({ id }) {
   return (
     <>
       <ImageBanner pictures={appartementData.pictures} />
-      <AppartementHeader appartementData={appartementData} />
+      <AppartementDetailsHeader appartementData={appartementData} />
       <div className="appartement__description__bloc">
         <BlocDescription title="Description" content={appartementData.description} />
         <BlocDescription
