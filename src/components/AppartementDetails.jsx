@@ -29,7 +29,7 @@ function AppartementDetails({ id }) {
     <>
       <ImageBanner pictures={appartementData.pictures} />
       <AppartementDetailsHeader appartementData={appartementData} />
-      <div className="appartement__description__bloc">
+      <div className="collapse__appartement__description">
         <Collapse title="Description" content={appartementData.description} />
         <Collapse
           title="Équipements"

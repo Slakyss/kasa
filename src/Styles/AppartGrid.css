@@ -1,7 +1,8 @@
 .AppartGrid {
   display: grid;
   align-content: stretch;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 1fr;
   background-color: rgb(236, 236, 236);
   border-radius: 30px;
   gap: 20px;
@@ -59,9 +60,5 @@
   .AppartGrid {
     background-color: white;
     padding: 0;
-  }
-
-  .appartement__card {
-    min-height: 310px;
   }
 }
