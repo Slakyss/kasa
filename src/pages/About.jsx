@@ -4,12 +4,11 @@ import AboutBannerImg from '../images/BannerAbout.png'
 import Banner from "../components/Banner"
 import Main from "../components/Main"
 import "../styles/Banner.css"
-
 function About() {
   return (
     <>
       <Main>
-          <Banner className="about__banner" image={AboutBannerImg} showOverlay={false}/>
+        <Banner className="about__banner" image={AboutBannerImg} showOverlay={false} />
           <div className='about__bloc__description'>
               <Collapse title="Fiabilité" content= "Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."/>
               <Collapse title="Respect" content= "La bienveillance fait partie des valeurs fondatrices de Kasa. Tout comportement discriminatoire ou de perturbation du voisinage entraînera une exclusion de notre plateforme."/>

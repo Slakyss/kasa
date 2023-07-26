@@ -75,3 +75,9 @@
 .carrousel__next {
   margin-right: 16px;
 }
+
+@media screen and (max-width: 768px) {
+  .slide__indicator {
+    display: none;
+  }
+}

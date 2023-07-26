@@ -1,9 +1,9 @@
 import React from "react";
 import "../styles/Banner.css";
 
-const Banner = ({ image, text, descriptionText, showOverlay }) => {
+const Banner = ({ image, text, descriptionText, showOverlay, className }) => {
   return (
-    <div className='banner'>
+    <div className={`banner ${className}`}>
       <img src={image} className='bannerImg' alt={descriptionText} />
       {showOverlay && <div className="overlay"></div>}
       <div className="content">
