@@ -41,14 +41,19 @@
   text-decoration: none;
 }
 
-@media screen and (width <= 1075px) {
+@media screen and (width <= 1200px) {
   .AppartGrid {
-    background-color: white;
-    padding: 0;
     grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
   }
 
   .appartement__card {
     max-width: none;
+  }
+}
+
+@media screen and (width <= 768px) {
+  .AppartGrid {
+    background-color: white;
+    padding: 0;
   }
 }

@@ -1,5 +1,11 @@
 .main {
-  margin-inline: 100px;
+  margin-inline: 8.5%;
   margin-bottom: 5%;
   min-height: 100vh;
+}
+
+@media screen and (width <= 768px) {
+  .main {
+    margin-inline: 4.25%;
+  }
 }

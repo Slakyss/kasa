@@ -44,6 +44,16 @@
   opacity: 0;
 }
 
-.about__collapse {
-  margin-inline: 200px;
+@media screen and (width <= 768px) {
+  .description__header {
+    font-size: 18px;
+  }
+
+  .description__header .fa-solid.fa-chevron-up {
+    font-size: 25px;
+  }
+
+  .description__content {
+    font-size: 18px;
+  }
 }

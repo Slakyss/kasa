@@ -9,7 +9,7 @@
 }
 
 .appartement__page {
-  margin-inline: 100px;
+  margin-inline: 8.5%;
 }
 
 .appartement__page h1 {
@@ -71,6 +71,7 @@
 
 .appartement__tags {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   align-items: center;
 }
@@ -82,15 +83,8 @@
   font-size: 14px;
   text-align: center;
   padding: 10px 30px;
-  width: 84px;
+  width: auto;
   height: 18px;
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.appartement__tags span:hover {
-  text-overflow: clip;
 }
 
 .appartement__description__bloc {
@@ -117,5 +111,9 @@
 
   .appartement__description__bloc {
     flex-direction: column;
+  }
+
+  .appartement__page {
+    margin-inline: 4.25%;
   }
 }

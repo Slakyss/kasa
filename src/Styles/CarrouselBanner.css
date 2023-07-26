@@ -75,3 +75,6 @@
 .carrousel__next {
   margin-right: 16px;
 }
+
+@media screen and (width <= 768px) {
+}
