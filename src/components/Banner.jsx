@@ -1,5 +1,5 @@
 import React from "react";
-import "./Banner.css";
+import "../styles/Banner.css";
 
 const Banner = ({ image, text, descriptionText, showOverlay }) => {
   return (
@@ -15,16 +15,3 @@ const Banner = ({ image, text, descriptionText, showOverlay }) => {
 };
 
 export default Banner;
-
-// import React from "react";
-// import './Banner.css'
-
-// function Banner({children}) { 
-//     return (
-//         <div>
-//             {children}
-//         </div>
-//     )
-// }
-
-// export default Banner

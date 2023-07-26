@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import fetchAppartementData from '../api/FetchAppData.jsx'; 
-import "../Styles/AppartGrid.css";
+import "../styles/AppartGrid.css";
 import AppartementCard from "./AppartementCard.jsx";
 
 function AppartGrid() {

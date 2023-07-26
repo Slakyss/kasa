@@ -1,5 +1,5 @@
 import React from 'react';
-import "../Styles/AppartementCard.css";
+import "../styles/AppartementCard.css";
 import { Link } from "react-router-dom";
 
 function AppartementCard(props) {

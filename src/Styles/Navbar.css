@@ -48,7 +48,7 @@
   }
 
   .navbar__link {
-    width: 180px;
     text-align: end;
+    width: 180px;
   }
 }

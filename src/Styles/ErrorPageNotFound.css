@@ -12,16 +12,16 @@
 
 .error__page h2 {
   font-size: clamp(2vw, 18px, 6vw);
-  margin-bottom: 12px;
   font-weight: 500;
+  margin-bottom: 12px;
   margin-bottom: 10%;
 }
 
 .error__page a {
   color: #ff6060;
-  font-size: max(1.2vw, 14px);
   text-decoration: none;
   text-decoration: underline;
+  font-size: max(1.2vw, 14px);
 }
 
 .error__page a:hover {

@@ -1,5 +1,5 @@
 import React from "react";
-import "../Styles/Main.css"
+import "../styles/Main.css"
 function Main({ children }) {
     return <div className="main">{children}</div>;
 }

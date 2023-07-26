@@ -7,12 +7,12 @@
   background-color: #ff6060;
   color: #ffffff;
   font-size: 24px;
-  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 10px;
+  padding: 10px;
   margin-bottom: 0;
   margin-top: 0;
   margin-top: 3%;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .description__header .fa-solid.fa-chevron-up {
@@ -28,14 +28,14 @@
   background-color: #f6f6f6;
   overflow: hidden;
   color: #ff6060;
+  transition: max-height 0.3s ease, opacity 0.3s ease, padding 1s ease; /* Ajout de la transition */
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   font-size: 24px;
   font-weight: 400;
-  margin-top: 0;
   border-radius: 10px;
   padding: 25px 10px 10px 10px;
-  transition: max-height 0.3s ease, opacity 0.3s ease, padding 1s ease; /* Ajout de la transition */
+  margin-top: 0;
   opacity: 1;
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .description__content.hide {

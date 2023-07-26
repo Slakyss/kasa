@@ -1,5 +1,5 @@
 import React from "react";
-import { createBrowserRouter, Outlet } from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import HeaderFooterLayout from "../layout/HeaderFooterLayout"; // Importer le composant que vous avez créé ci-dessus
 import HomePage from "../pages/HomePage";
 import AppartementPage from "../pages/AppartementPage";
