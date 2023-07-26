@@ -1,14 +1,17 @@
 import React from 'react'
-import Navbar from "../layout/Navbar"
-import Main from "../layout/Main"
-import NotFoundPage from '../components/NotFoundPage'
+import Main from "../components/Main"
+import { Link } from 'react-router-dom';
+import "../Styles/ErrorPageNotFound.css"
 
 function ErrorPageNotFound() {
   return (
     <>
-        <Navbar />
         <Main>
-            <NotFoundPage/>
+          <div className='error__page'>
+            <h1>404</h1>
+            <h2>Oups ! La page que vous demandez n'existe pas</h2>
+            <Link to="/">Retournez sur la page d'accueil</Link>
+          </div>
         </Main>
     </>
   )

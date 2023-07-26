@@ -1,29 +1,14 @@
 import React from "react";
 import { createBrowserRouter, Outlet } from "react-router-dom";
-import Main from "../layout/Main";
-import Footer from "../layout/Footer";
+import HeaderFooterLayout from "../layout/HeaderFooterLayout"; // Importer le composant que vous avez créé ci-dessus
 import HomePage from "../pages/HomePage";
 import AppartementPage from "../pages/AppartementPage";
-import Navbar from "../layout/Navbar";
 import About from "../pages/About";
 import ErrorPageNotFound from "../pages/ErrorPageNotFound";
 
-const HeaderFooterLayout = () => {
-  return (
-    <>
-      <Navbar />
-      <Main>
-        <Outlet />
-      </Main>
-      <Footer />
-    </>
-  );
-};
-
-const AppartementRouter = createBrowserRouter([
+const AppRouter = createBrowserRouter([
   {
     element: <HeaderFooterLayout />,
-    errorElement: <ErrorPageNotFound />,
     children: [
       {
         path: "/",
@@ -37,14 +22,13 @@ const AppartementRouter = createBrowserRouter([
         path: "/about",
         element: <About />,
       },
+      {
+        path: "/*",
+        element: <ErrorPageNotFound />,
+        showFooter: false,
+      }
     ],
   },
-  {
-    path: "/error",
-    element: <ErrorPageNotFound/>
-  }  
 ]);
 
-
-
-export const router = AppartementRouter;
+export default AppRouter;

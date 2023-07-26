@@ -37,6 +37,7 @@
 }
 
 .banner__about {
+  margin-inline: 100px;
   background: url("../images/BannerAbout.png");
   background-position: center;
   background-size: cover;

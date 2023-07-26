@@ -1,7 +1,7 @@
 .navbar {
   display: flex;
   align-items: center;
-  padding: 5%;
+  margin-inline: 200px;
 }
 
 .navbar__link :nth-child(2) {

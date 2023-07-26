@@ -4,7 +4,7 @@
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   gap: 20px;
   background-color: rgb(236, 236, 236);
-  align-content: stretch; /* Forcer les éléments de la grille à remplir tout l'espace vertical */
+  align-content: stretch;
   padding: 40px;
 }
 

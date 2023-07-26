@@ -8,6 +8,10 @@
   flex-grow: 1;
 }
 
+.appartement__page {
+  margin-inline: 100px;
+}
+
 .appartement__page h1 {
   font-weight: 500;
   margin-top: 0;

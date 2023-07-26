@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./BlocDescription.css";
+import "../Styles/Collapse.css";
 
 function BlocDescription(props) {
   const [isContentVisible, setIsContentVisible] = useState(false);

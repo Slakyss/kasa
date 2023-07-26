@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import BlocDescription from '../components/BlocDescription';
+import Collapse from './Collapse';
 import ImageBanner from './CarrouselBanner';
 import AppartementDetailsHeader from '../components/AppartementDetailsHeader';
 import { Navigate } from 'react-router-dom';
@@ -30,8 +30,8 @@ function AppartementDetails({ id }) {
       <ImageBanner pictures={appartementData.pictures} />
       <AppartementDetailsHeader appartementData={appartementData} />
       <div className="appartement__description__bloc">
-        <BlocDescription title="Description" content={appartementData.description} />
-        <BlocDescription
+        <Collapse title="Description" content={appartementData.description} />
+        <Collapse
           title="Équipements"
           content={appartementData.equipments.map((equipment, index) => (
             <li key={index}>{equipment}</li>

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './CarrouselBanner.css';
+import '../Styles/CarrouselBanner.css';
 
 function ImageBanner(props) {
   const pictures = props.pictures;
