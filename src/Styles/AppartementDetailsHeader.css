@@ -8,10 +8,6 @@
   flex-grow: 1;
 }
 
-.appartement__page {
-  margin-inline: 8.5%;
-}
-
 .appartement__page h1 {
   font-weight: 500;
   font-size: 36px;
@@ -111,9 +107,5 @@
 
   .collapse__appartement__description {
     flex-direction: column;
-  }
-
-  .appartement__page {
-    margin-inline: 4.25%;
   }
 }

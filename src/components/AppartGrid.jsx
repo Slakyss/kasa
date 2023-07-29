@@ -3,6 +3,10 @@ import fetchAppartementData from '../api/FetchAppData.jsx';
 import "../styles/AppartGrid.css";
 import AppartementCard from "./AppartementCard.jsx";
 
+// L'utilisation combinée de useEffect et useState permet de récupérer et d'afficher dynamiquement
+// la liste des appartements des que les données sont disponibles, tout en évitant les problèmes
+// de synchronisation liés à l'opération asynchrone de récupération des données.
+
 function AppartGrid() {
   const [appartement, setAppartement] = useState([]);
 

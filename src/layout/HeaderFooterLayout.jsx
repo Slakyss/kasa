@@ -20,3 +20,7 @@ const HeaderFooterLayout = ({ showFooter = true }) => {
 };
 
 export default HeaderFooterLayout;
+
+
+
+
