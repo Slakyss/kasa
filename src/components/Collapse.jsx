@@ -25,3 +25,4 @@ function BlocDescription(props) {
 }
 
 export default BlocDescription;
+
