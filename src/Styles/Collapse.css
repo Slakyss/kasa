@@ -28,6 +28,8 @@
 .description__header .fa-solid.fa-chevron-up {
   font-size: 32px;
   transition: transform 1s ease;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 .description__header .fa-solid.fa-chevron-up.rotate {

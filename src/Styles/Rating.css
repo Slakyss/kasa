@@ -2,7 +2,8 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 18px;
+  height: 36px;
+  font-size: 25px;
 }
 
 .appartement__owner__stars i.fa-solid.fa-star {
@@ -16,7 +17,13 @@
 
 @media screen and (width <= 768px) {
   .appartement__owner__stars {
-    height: 18px;
+    height: 32px;
     width: 98px;
+    font-size: 13px;
+  }
+
+  .appartement__owner__stars i.fa-solid.fa-star {
+    height: 100%;
+    margin-top: 0;
   }
 }

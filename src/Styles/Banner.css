@@ -47,9 +47,9 @@
 @media screen and (max-width: 768px) {
   .banner {
     min-width: 310px;
-    height: 125px;
+    max-height: 111px;
     border-radius: 10px;
-    margin-top: 17px;
+    margin-top: 27px;
   }
 
   .content h3 {

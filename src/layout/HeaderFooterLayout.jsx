@@ -1,8 +1,8 @@
 import React from "react";
 import { Outlet, useLocation } from "react-router-dom";
-import Main from "../components/Main";
 import Footer from "../layout/Footer";
 import Navbar from "../layout/Navbar";
+import Conteneur from "./Conteneur";
 
 const HeaderFooterLayout = ({ showFooter = true }) => {
   const location = useLocation();
@@ -10,10 +10,12 @@ const HeaderFooterLayout = ({ showFooter = true }) => {
 
   return (
     <>
-      <Navbar />
-      <Main>
-        <Outlet />
-      </Main>
+      <Conteneur>
+        <Navbar />
+        <main>
+          <Outlet />
+        </main>
+      </Conteneur>
       {showFooter && !isPageError && <Footer />}
     </>
   );

@@ -4,7 +4,6 @@ import fetchAppartementData from '../api/FetchAppData';
 import Collapse from '../components/Collapse';
 import ImageBanner from '../components/CarrouselBanner';
 import AppartementDetailsHeader from '../components/AppartementDetailsHeader';
-import Main from "../components/Main"
 
 function AppartementPage() {
   const { id } = useParams();
@@ -27,7 +26,7 @@ function AppartementPage() {
   if (appartementData === undefined) return <Navigate to="/error" replace />;
 
   return (
-    <Main>
+    <main>
       <ImageBanner pictures={appartementData.pictures} />
       <AppartementDetailsHeader appartementData={appartementData} />
       <div className="collapse__appartement__description">
@@ -39,7 +38,7 @@ function AppartementPage() {
           ))}
         />
       </div>
-    </Main>
+    </main>
   );
 }
 

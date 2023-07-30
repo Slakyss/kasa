@@ -1,0 +1,14 @@
+.conteneur {
+  display: flex;
+  flex-direction: column;
+  margin-inline: 100px;
+  min-height: 100vh;
+  margin-inline: 100px;
+}
+
+@media (max-width: 768px) {
+  .conteneur {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+}
