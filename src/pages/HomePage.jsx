@@ -1,7 +1,7 @@
 import React from "react";
 import Banner from "../components/Banner";
 import "../styles/App.css";
-import HomeBannerImg from "../images/BannerHome.png";
+import HomeBannerImg from "../images/bannerHome.png";
 import Main from "../components/Main";
 import AppartGrid from "../components/AppartGrid.jsx";
 
