@@ -11,10 +11,8 @@ const HeaderFooterLayout = ({ showFooter = true }) => {
   return (
     <>
       <Conteneur>
-        <Navbar />
-        <main>
+        <Navbar />     
           <Outlet />
-        </main>
       </Conteneur>
       {showFooter && !isPageError && <Footer />}
     </>

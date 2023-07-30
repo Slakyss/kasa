@@ -60,6 +60,6 @@
   }
 
   .about__banner {
-    height: 223px;
+    min-height: 223px;
   }
 }
