@@ -4,6 +4,7 @@ import AboutBannerImg from '../images/BannerAbout.png'
 import Banner from "../components/Banner"
 import Main from "../components/Main"
 import "../styles/Banner.css"
+
 function About() {
   return (
     <>

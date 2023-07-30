@@ -1,5 +1,9 @@
 .image__banner {
   position: relative;
+  margin-top: 20px;
+  height: 415px;
+  width: 100%;
+  margin-bottom: 30px;
 }
 
 .image__banner.single-image {
@@ -23,7 +27,7 @@
 .slider {
   display: flex;
   overflow: hidden;
-  border-radius: 20px;
+  border-radius: 25px;
   width: 100%;
   margin-bottom: 3%;
 }
@@ -41,7 +45,7 @@
   font-size: 18px;
   transform: translateX(-50%);
   left: 50%;
-  bottom: 0;
+  bottom: 24.92px;
 }
 
 .slide img {
@@ -58,26 +62,48 @@
   transform: translateY(-50%);
   top: 50%;
   width: 100%;
+  height: 119.63px;
   z-index: 1;
 }
 
-.carrousel__prev,
-.carrousel__next {
-  color: white;
+.carrousel__prev img,
+.carrousel__next img {
   cursor: pointer;
-  font-size: 79px;
 }
 
 .carrousel__prev {
-  margin-left: 16px;
+  margin: 8.4px 25.96px 32.04px 23.36px;
 }
 
 .carrousel__next {
-  margin-right: 16px;
+  margin: 8.4px 25.96px 32.04px 23.36px;
 }
 
 @media screen and (max-width: 768px) {
   .slide__indicator {
     display: none;
+  }
+
+  .image__banner {
+    height: 255px;
+    margin-bottom: 15px;
+  }
+
+  .slider {
+    height: 100%;
+  }
+
+  .carrousel__prev img,
+  .carrousel__next img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .carrousel__prev {
+    margin: 8.4px 25.96px 32.04px 0;
+  }
+
+  .carrousel__next {
+    margin: 8.4px 0 32.04px 23.36px;
   }
 }

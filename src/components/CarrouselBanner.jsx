@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import '../styles/CarrouselBanner.css';
+import vectorLeft from "../images/vectorLeft.svg";
+import vectorRight from "../images/vectorRight.svg";
 
 function ImageBanner(props) {
   const pictures = props.pictures;
@@ -37,10 +39,12 @@ function ImageBanner(props) {
       {totalPictures > 1 && (
         <div className="carrousel__navigation">
           <div className="carrousel__prev" onClick={goToPreviousSlide}>
-            <i className="fa-solid fa-chevron-left"></i>
+            {/* <i className="fa-solid fa-chevron-left"></i> */}
+            <img src={vectorLeft} alt={""}/>
           </div>
           <div className="carrousel__next" onClick={goToNextSlide}>
-            <i className="fa-solid fa-chevron-right"></i>
+            {/* <i className="fa-solid fa-chevron-right"></i> */}
+            <img src={vectorRight} alt={""}/>
           </div>
         </div>
       )}

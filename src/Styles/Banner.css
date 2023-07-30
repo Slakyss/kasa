@@ -3,8 +3,8 @@
   overflow: hidden;
   border-radius: 25px;
   width: 100%;
-  height: 250px;
-  margin-bottom: 5%;
+  height: 223px;
+  margin-top: 68px;
 }
 
 .bannerImg {
@@ -26,7 +26,6 @@
 .content h3 {
   font-size: 48px;
   font-weight: 500;
-  margin-bottom: 10px;
 }
 
 .banner .overlay {
@@ -35,25 +34,32 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.263);
+  opacity: 0.30000001192092896;
+  background: #000;
+  mix-blend-mode: darken;
 }
 
-/* Media Query for Mobile */
+.about__banner {
+  margin-top: 44px;
+  margin-bottom: 31px;
+}
+
 @media screen and (max-width: 768px) {
   .banner {
     min-width: 310px;
     height: 125px;
     border-radius: 10px;
+    margin-top: 17px;
   }
 
   .content h3 {
     text-align: left;
-    font-size: 25px;
-    padding-left: 10px;
-    width: 75%;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 31px 102px 32px 16px;
   }
 
   .about__banner {
-    height: 250px;
+    height: 223px;
   }
 }

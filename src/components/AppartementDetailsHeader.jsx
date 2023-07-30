@@ -1,4 +1,5 @@
 import React from 'react'
+import Rating from './Rating'
 import "../styles/AppartementDetailsHeader.css"
 
 function AppartementHeader(props) {
@@ -25,11 +26,7 @@ const [firstName, lastName] = name.split (" ");
                 <img src={props.appartementData.host.picture} alt=""/>
             </div>
             </div>
-            <div className='appartement__owner__stars'>
-
-                {[1, 2, 3, 4, 5].map((number) => (
-                <span key= {number} className={props.appartementData.rating >= number ? 'on' : "" }><i className="fa-solid fa-star"></i></span>))}
-            </div>
+            <Rating rating={props.appartementData.rating} />
         </div>
     </div>
   )

@@ -1,9 +1,7 @@
 .navbar {
   display: flex;
   align-items: center;
-  margin-inline: 15.555%;
-  margin-bottom: 5%;
-  margin-top: 3%;
+  margin-top: 40px;
 }
 
 .navbar__logo img {
@@ -19,14 +17,11 @@
   text-decoration: none;
   color: #ff6060;
   font-size: 24px;
+  font-weight: 500;
 }
 
 .navbar a.active {
   text-decoration: underline;
-}
-
-.navbar a:hover {
-  font-weight: bold;
 }
 
 .navbar > *:first-child {
@@ -35,7 +30,7 @@
 
 @media screen and (width <= 768px) {
   .navbar {
-    margin-inline: 8.138%;
+    margin-top: 20px;
   }
 
   .navbar a {
@@ -44,11 +39,18 @@
   }
 
   .navbar__logo img {
-    width: 50%;
+    width: 145px;
+    height: 47px;
   }
 
   .navbar__link {
     text-align: end;
     width: 180px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    margin-top: 20px;
   }
 }

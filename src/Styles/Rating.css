@@ -1,0 +1,22 @@
+.appartement__owner__stars {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 18px;
+}
+
+.appartement__owner__stars i.fa-solid.fa-star {
+  color: #e3e3e3;
+  margin-top: 21px;
+}
+
+.appartement__owner__stars .on i.fa-solid.fa-star {
+  color: #ff6060;
+}
+
+@media screen and (width <= 768px) {
+  .appartement__owner__stars {
+    height: 18px;
+    width: 98px;
+  }
+}

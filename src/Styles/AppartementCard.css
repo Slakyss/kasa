@@ -1,14 +1,22 @@
 .appartement__card {
-  display: grid;
-  overflow: hidden;
-  grid-template-rows: 1fr auto;
+  display: flex;
+  flex-direction: column;
+  background-size: cover;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  border-radius: 20px;
+  max-width: 340px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.appartement__card:hover {
+  scale: 1.05;
 }
 
 .appartement__card img {
   object-fit: cover;
   width: 100%;
+  height: 260px;
+  border-radius: 10px 10px 0 0;
 }
 
 .appartement__subtitle {
@@ -17,13 +25,33 @@
   justify-content: flex-start;
   color: white;
   background: linear-gradient(to top, #8a3737, #ff6060);
-  height: 70px;
-  padding-left: 5%;
+  height: 60px;
+  line-height: 142.6%;
+  padding: 10px 20px 20px 20px;
   font-size: 18px;
   font-weight: 500;
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 10px 10px;
 }
 
 .link__style {
   text-decoration: none;
+}
+
+@media screen and (width <= 1440px) {
+  .appartement__card {
+    max-width: none;
+  }
+}
+
+@media screen and (width <= 768px) {
+  .appartement__card img {
+    height: 190px;
+  }
+  .appartement__subtitle {
+    height: 45px;
+  }
+  .appartement__card {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 4px;
+    max-width: none;
+  }
 }
