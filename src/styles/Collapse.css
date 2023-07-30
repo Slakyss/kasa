@@ -70,6 +70,15 @@
   margin-bottom: 31px;
 }
 
+@media screen and (min-width: 1441px) {
+  .appartement__description {
+    width: 50%;
+  }
+  .about__collapse .appartement__description {
+    width: 80%;
+  }
+}
+
 @media screen and (width <= 1225px) {
   .about__collapse .appartement__description {
     min-width: 100%;
